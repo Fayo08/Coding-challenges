@@ -1,8 +1,12 @@
 function birthdayCakeCandles(candles) {
     // Write your code here
-    const max = Math.max(...candles)
-    const count = candles.filter(candle=>candle===max).length;
-    console.log(count)
+    const tallestCandle = Math.max(...candles)
+    let answer = 0
+    for(let i = 0; i < candles.length; ++i){
+        if(candles[i] === tallestCandle){
+            answer++
+        }
+    };
     
 
 }
